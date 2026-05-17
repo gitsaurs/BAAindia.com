@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhaskara Advanced Automation (BAA) | Custom Material Handling & Automation Systems Bangalore</title>
+  <meta name="description" content="Bhaskara Advanced Automation (BAA) – Bangalore's premier manufacturer of custom material handling systems, coding applications, home lifts, and special purpose machines since 1994. 2000+ systems delivered." />
+  <meta name="keywords" content="material handling systems bangalore, hydraulic pallet truck, coding applications, home lifts, automation manufacturer, BAA India, Bhaskara Advanced Automation, custom automation systems" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://baaindia.com/index.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bhaskara Advanced Automation (BAA) | Material Handling & Automation Systems" />
+  <meta property="og:description" content="Bangalore's premier manufacturer of custom material handling systems, coding applications, home lifts since 1994. Serving 2000+ clients including BHEL, ISRO, L&T, Volvo." />
+  <meta property="og:url" content="https://baaindia.com/index.html" />
+  <meta property="og:image" content="https://baaindia.com/assets/og-image.jpg" />
+  <meta property="og:site_name" content="Bhaskara Advanced Automation" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Bhaskara Advanced Automation | Automation Systems Bangalore" />
+  <meta name="twitter:description" content="Custom material handling systems, coding applications, home lifts. 30+ years of innovation." />
+
+  <!-- Structured Data: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Bhaskara Advanced Automation",
+    "alternateName": "BAA India",
+    "description": "Manufacturer of custom material handling systems, coding applications, home lifts and special purpose machines.",
+    "url": "https://baaindia.com",
+    "telephone": "+91-9886330317",
+    "email": "info@baaindia.com",
+    "foundingDate": "1994",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "No.52/1, Opp Trinity Car Care, Kottigepalya, Old Outer Ring Road",
+      "addressLocality": "Bangalore",
+      "addressRegion": "Karnataka",
+      "postalCode": "560091",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 12.9716,
+      "longitude": 77.5946
+    },
+    "sameAs": ["https://baaindia.com"],
+    "openingHours": "Mo-Sa 09:00-18:00"
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0c1f3d',
+            accent: '#f97316',
+            'accent-dark': '#ea6c0a',
+            'light-bg': '#f8fafc',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          animation: {
+            'fade-up': 'fadeUp 0.6s ease forwards',
+            'fade-in': 'fadeIn 0.8s ease forwards',
+            'float': 'float 6s ease-in-out infinite',
+            'spin-slow': 'spin 20s linear infinite',
+            'count-up': 'countUp 2s ease-out forwards',
+          },
+          keyframes: {
+            fadeUp: { '0%': { opacity: '0', transform: 'translateY(30px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+            fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+            float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-20px)' } },
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+    /* Navbar */
+    .nav-link { position: relative; }
+    .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #f97316; transition: width 0.3s; }
+    .nav-link:hover::after { width: 100%; }
+    .nav-link.active::after { width: 100%; }
+
+    /* Dropdown */
+    .dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+    .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; }
+
+    /* Hero */
+    .hero-bg {
+      background: linear-gradient(135deg, #0c1f3d 0%, #1a3a6b 50%, #0c1f3d 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .particle { position: absolute; border-radius: 50%; opacity: 0.15; animation: float 6s ease-in-out infinite; }
+
+    /* Typewriter */
+    .typewriter { border-right: 3px solid #f97316; animation: blink 0.75s step-end infinite; }
+    @keyframes blink { 0%,100%{border-color:transparent} 50%{border-color:#f97316} }
+
+    /* Stats card */
+    .stat-card { background: rgba(255,255,255,0.08); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.12); }
+
+    /* Product card */
+    .product-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    .product-card:hover { transform: translateY(-8px); box-shadow: 0 25px 60px rgba(12,31,61,0.15); }
+    .product-card:hover .card-icon { transform: scale(1.1) rotate(5deg); }
+    .card-icon { transition: transform 0.4s ease; }
+
+    /* Client marquee */
+    .marquee-wrapper { overflow: hidden; }
+    .marquee-track { display: flex; animation: marquee 25s linear infinite; width: max-content; }
+    .marquee-track:hover { animation-play-state: paused; }
+    @keyframes marquee { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+
+    /* Gradient text */
+    .gradient-text { background: linear-gradient(135deg, #f97316, #fb923c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+    /* Section heading line */
+    .section-line { width: 60px; height: 4px; background: linear-gradient(90deg, #f97316, #fb923c); border-radius: 2px; }
+
+    /* CTA Button */
+    .btn-primary { background: linear-gradient(135deg, #f97316, #ea6c0a); transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(249,115,22,0.35); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(249,115,22,0.5); }
+    .btn-outline { border: 2px solid rgba(255,255,255,0.6); transition: all 0.3s ease; }
+    .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: white; }
+
+    /* Scroll indicator */
+    .scroll-indicator { animation: bounce 2s infinite; }
+    @keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(10px)} }
+
+    /* Why card */
+    .why-card { border-left: 4px solid transparent; transition: all 0.3s; }
+    .why-card:hover { border-left-color: #f97316; background: #fff7ed; }
+
+    /* Mobile nav */
+    #mobile-menu { transition: all 0.3s ease; }
+
+    /* Sticky nav */
+    .nav-scrolled { background: rgba(255,255,255,0.98) !important; backdrop-filter: blur(20px); box-shadow: 0 2px 30px rgba(0,0,0,0.1); }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 overflow-x-hidden">
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center space-x-3 group">
+        <div class="w-10 h-10 bg-accent rounded-xl flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300">
+          <span class="text-white font-black text-lg">B</span>
+        </div>
+        <div>
+          <div class="text-white font-black text-xl leading-none tracking-tight" id="logo-text">BAA</div>
+          <div class="text-orange-300 text-xs font-medium" id="logo-sub">Bhaskara Advanced Automation</div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden lg:flex items-center space-x-8">
+        <a href="index.html" class="nav-link active text-white font-medium hover:text-orange-300 transition-colors">Home</a>
+        <a href="profile.html" class="nav-link text-white/80 font-medium hover:text-orange-300 transition-colors">Profile</a>
+
+        <!-- Products Dropdown -->
+        <div class="dropdown relative">
+          <button class="nav-link text-white/80 font-medium hover:text-orange-300 transition-colors flex items-center gap-1">
+            Products <i class="fa fa-chevron-down text-xs mt-0.5"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-3 w-56 bg-white rounded-2xl shadow-2xl border border-gray-100 py-2 z-50">
+            <a href="homelist.html" class="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 hover:text-accent transition-colors group">
+              <i class="fa fa-home text-accent text-sm w-4"></i>
+              <span class="text-gray-700 font-medium text-sm group-hover:text-accent">Home Lifts</span>
+            </a>
+            <a href="material_handling_systems.html" class="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 hover:text-accent transition-colors group">
+              <i class="fa fa-truck text-accent text-sm w-4"></i>
+              <span class="text-gray-700 font-medium text-sm group-hover:text-accent">Material Handling</span>
+            </a>
+            <a href="coding_applications.html" class="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 hover:text-accent transition-colors group">
+              <i class="fa fa-code text-accent text-sm w-4"></i>
+              <span class="text-gray-700 font-medium text-sm group-hover:text-accent">Coding Applications</span>
+            </a>
+            <a href="special_purpose_machines.html" class="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 hover:text-accent transition-colors group">
+              <i class="fa fa-cogs text-accent text-sm w-4"></i>
+              <span class="text-gray-700 font-medium text-sm group-hover:text-accent">Special Purpose Machines</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="clients.html" class="nav-link text-white/80 font-medium hover:text-orange-300 transition-colors">Clients</a>
+        <a href="support.html" class="nav-link text-white/80 font-medium hover:text-orange-300 transition-colors">Support</a>
+        <a href="contactus.html" class="nav-link text-white/80 font-medium hover:text-orange-300 transition-colors">Contact</a>
+        <a href="enquiry.html" class="btn-primary text-white px-6 py-2.5 rounded-xl font-semibold text-sm">
+          Get a Quote <i class="fa fa-arrow-right ml-1 text-xs"></i>
+        </a>
+      </div>
+
+      <!-- Mobile menu toggle -->
+      <button id="mobile-toggle" class="lg:hidden text-white p-2">
+        <i class="fa fa-bars text-xl" id="menu-icon"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-xl">
+    <div class="px-4 py-4 space-y-1">
+      <a href="index.html" class="block px-4 py-3 text-primary font-semibold rounded-lg bg-orange-50">Home</a>
+      <a href="profile.html" class="block px-4 py-3 text-gray-700 font-medium rounded-lg hover:bg-gray-50">Profile</a>
+      <div class="px-4 py-2 text-xs text-gray-400 font-semibold uppercase tracking-wider">Products</div>
+      <a href="homelist.html" class="block px-6 py-2.5 text-gray-700 font-medium rounded-lg hover:bg-orange-50">Home Lifts</a>
+      <a href="material_handling_systems.html" class="block px-6 py-2.5 text-gray-700 font-medium rounded-lg hover:bg-orange-50">Material Handling Systems</a>
+      <a href="coding_applications.html" class="block px-6 py-2.5 text-gray-700 font-medium rounded-lg hover:bg-orange-50">Coding Applications</a>
+      <a href="special_purpose_machines.html" class="block px-6 py-2.5 text-gray-700 font-medium rounded-lg hover:bg-orange-50">Special Purpose Machines</a>
+      <a href="clients.html" class="block px-4 py-3 text-gray-700 font-medium rounded-lg hover:bg-gray-50">Clients</a>
+      <a href="support.html" class="block px-4 py-3 text-gray-700 font-medium rounded-lg hover:bg-gray-50">Support</a>
+      <a href="contactus.html" class="block px-4 py-3 text-gray-700 font-medium rounded-lg hover:bg-gray-50">Contact Us</a>
+      <a href="enquiry.html" class="block px-4 py-3 text-white font-semibold rounded-lg btn-primary text-center mt-2">Get a Quote</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero-bg min-h-screen flex items-center relative" id="hero">
+  <!-- Animated particles -->
+  <div class="particle w-72 h-72 bg-orange-500 rounded-full absolute -top-20 -right-20"></div>
+  <div class="particle w-40 h-40 bg-blue-400 rounded-full absolute bottom-20 left-10" style="animation-delay:2s"></div>
+  <div class="particle w-20 h-20 bg-orange-300 rounded-full absolute top-1/3 left-1/4" style="animation-delay:4s"></div>
+  <div class="particle w-16 h-16 bg-blue-300 rounded-full absolute bottom-1/3 right-1/4" style="animation-delay:1s"></div>
+
+  <!-- Grid lines decoration -->
+  <div class="absolute inset-0 opacity-5" style="background-image: linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px); background-size: 60px 60px;"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <!-- Left content -->
+      <div>
+        <div class="inline-flex items-center gap-2 bg-orange-500/20 border border-orange-400/30 text-orange-300 px-4 py-2 rounded-full text-sm font-medium mb-8" data-aos="fade-right">
+          <i class="fa fa-circle text-xs animate-pulse"></i>
+          Since 1994 · Bangalore, India
+        </div>
+        <h1 class="text-5xl lg:text-7xl font-black text-white leading-none mb-6" data-aos="fade-right" data-aos-delay="100">
+          Engineering<br />
+          <span class="gradient-text">Innovation</span><br />
+          Since 1994
+        </h1>
+        <p class="text-white/70 text-lg lg:text-xl leading-relaxed mb-10 max-w-xl" data-aos="fade-right" data-aos-delay="200">
+          Bhaskara Advanced Automation designs, develops and manufactures world-class material handling systems, coding applications, and home lifts — trusted by India's finest industries.
+        </p>
+        <div class="flex flex-wrap gap-4" data-aos="fade-right" data-aos-delay="300">
+          <a href="enquiry.html" class="btn-primary text-white px-8 py-4 rounded-2xl font-bold text-base inline-flex items-center gap-2">
+            Request a Quote <i class="fa fa-arrow-right"></i>
+          </a>
+          <a href="profile.html" class="btn-outline text-white px-8 py-4 rounded-2xl font-bold text-base inline-flex items-center gap-2">
+            Our Story <i class="fa fa-play text-xs"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Stats cards -->
+      <div class="grid grid-cols-2 gap-4" data-aos="fade-left" data-aos-delay="200">
+        <div class="stat-card rounded-2xl p-6 col-span-2">
+          <div class="text-5xl font-black text-white mb-1"><span class="counter" data-target="2000">0</span>+</div>
+          <div class="text-orange-300 font-semibold">Custom Systems Delivered</div>
+          <div class="text-white/50 text-sm mt-1">Across all product categories</div>
+        </div>
+        <div class="stat-card rounded-2xl p-6">
+          <div class="text-4xl font-black text-white mb-1"><span class="counter" data-target="30">0</span>+</div>
+          <div class="text-orange-300 font-medium text-sm">Years of Experience</div>
+        </div>
+        <div class="stat-card rounded-2xl p-6">
+          <div class="text-4xl font-black text-white mb-1"><span class="counter" data-target="5">0</span></div>
+          <div class="text-orange-300 font-medium text-sm">Group Companies</div>
+        </div>
+        <div class="stat-card rounded-2xl p-6">
+          <div class="text-4xl font-black text-white mb-1"><span class="counter" data-target="44">0</span>+</div>
+          <div class="text-orange-300 font-medium text-sm">Industry Clients</div>
+        </div>
+        <div class="stat-card rounded-2xl p-6">
+          <div class="text-3xl font-black text-white mb-1">1 Yr</div>
+          <div class="text-orange-300 font-medium text-sm">Product Warranty</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 scroll-indicator">
+    <div class="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center p-1">
+      <div class="w-1 h-3 bg-white/60 rounded-full"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT STRIP ===== -->
+<section class="bg-accent py-5">
+  <div class="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-between gap-4">
+    <div class="text-white font-bold text-lg">Recognised for Innovative Products</div>
+    <div class="flex flex-wrap gap-6 text-white/90 text-sm font-medium">
+      <span><i class="fa fa-check-circle mr-2"></i>ISO Compliant Manufacturing</span>
+      <span><i class="fa fa-check-circle mr-2"></i>In-house Design Team</span>
+      <span><i class="fa fa-check-circle mr-2"></i>24/7 After-Sales Support</span>
+      <span><i class="fa fa-check-circle mr-2"></i>Custom Built Solutions</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUCTS SECTION ===== -->
+<section class="py-24 bg-light-bg" id="products">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="section-line mx-auto mb-4" data-aos="fade-up"></div>
+      <h2 class="text-4xl lg:text-5xl font-black text-primary mb-4" data-aos="fade-up" data-aos-delay="100">Our Product Range</h2>
+      <p class="text-gray-500 text-lg max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">Engineered for performance, built for reliability. Every product custom-designed to your exact specifications.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Home Lifts -->
+      <a href="homelist.html" class="product-card bg-white rounded-3xl p-8 border border-gray-100 block group" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-icon w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mb-6">
+          <i class="fa fa-home text-white text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">Home Lifts</h3>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4">Hydraulic vertical lifts for villas and multi-storey homes. Specially designed for disabled and aged persons.</p>
+        <div class="text-accent font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">Explore <i class="fa fa-arrow-right text-xs"></i></div>
+      </a>
+
+      <!-- Material Handling -->
+      <a href="material_handling_systems.html" class="product-card bg-white rounded-3xl p-8 border border-gray-100 block group" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-icon w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mb-6">
+          <i class="fa fa-truck text-white text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">Material Handling</h3>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4">Hydraulic pallet trucks, hand stackers, forklifts, scissor lifts, mobile cranes, and custom-built systems.</p>
+        <div class="text-accent font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">Explore <i class="fa fa-arrow-right text-xs"></i></div>
+      </a>
+
+      <!-- Coding Applications -->
+      <a href="coding_applications.html" class="product-card bg-white rounded-3xl p-8 border border-gray-100 block group" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-icon w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-700 rounded-2xl flex items-center justify-center mb-6">
+          <i class="fa fa-barcode text-white text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">Coding Applications</h3>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4">Egg coding, credit card coding, tablet & packet coding systems, custom conveyors, and pin coding systems.</p>
+        <div class="text-accent font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">Explore <i class="fa fa-arrow-right text-xs"></i></div>
+      </a>
+
+      <!-- Special Purpose Machines -->
+      <a href="special_purpose_machines.html" class="product-card bg-white rounded-3xl p-8 border border-gray-100 block group" data-aos="fade-up" data-aos-delay="400">
+        <div class="card-icon w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-800 rounded-2xl flex items-center justify-center mb-6">
+          <i class="fa fa-cogs text-white text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">Special Purpose Machines</h3>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4">Custom-engineered machines built for unique manufacturing challenges and specialized automation needs.</p>
+        <div class="text-accent font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">Explore <i class="fa fa-arrow-right text-xs"></i></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY BAA SECTION ===== -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <!-- Left -->
+      <div>
+        <div class="section-line mb-4" data-aos="fade-right"></div>
+        <h2 class="text-4xl lg:text-5xl font-black text-primary mb-6" data-aos="fade-right" data-aos-delay="100">Why Choose<br /><span class="gradient-text">Bhaskara Advanced Automation?</span></h2>
+        <p class="text-gray-500 text-lg mb-10" data-aos="fade-right" data-aos-delay="200">Three decades of engineering excellence, serving the most demanding industries in India.</p>
+
+        <div class="space-y-4">
+          <div class="why-card p-5 rounded-xl bg-gray-50 cursor-default" data-aos="fade-right" data-aos-delay="100">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <i class="fa fa-sliders text-accent"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-primary mb-1">Flexibility to Adapt</h4>
+                <p class="text-gray-500 text-sm">Manufacturing processes tailored to exact customer needs — small batch or large scale.</p>
+              </div>
+            </div>
+          </div>
+          <div class="why-card p-5 rounded-xl bg-gray-50 cursor-default" data-aos="fade-right" data-aos-delay="200">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <i class="fa fa-users text-accent"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-primary mb-1">In-house Engineering Team</h4>
+                <p class="text-gray-500 text-sm">Pool of expert Engineers and Designers for end-to-end product development.</p>
+              </div>
+            </div>
+          </div>
+          <div class="why-card p-5 rounded-xl bg-gray-50 cursor-default" data-aos="fade-right" data-aos-delay="300">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <i class="fa fa-shield-alt text-accent"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-primary mb-1">Sound Infrastructure</h4>
+                <p class="text-gray-500 text-sm">State-of-the-art fabrication, machining and assembly facility in Bangalore.</p>
+              </div>
+            </div>
+          </div>
+          <div class="why-card p-5 rounded-xl bg-gray-50 cursor-default" data-aos="fade-right" data-aos-delay="400">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <i class="fa fa-star text-accent"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-primary mb-1">Strategic Customer Importance</h4>
+                <p class="text-gray-500 text-sm">Every customer — big or small — receives dedicated attention and post-sales support.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="relative" data-aos="fade-left">
+        <div class="bg-gradient-to-br from-primary to-blue-900 rounded-3xl p-10 text-white relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-48 h-48 bg-orange-500/20 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+          <div class="relative z-10">
+            <i class="fa fa-quote-left text-orange-400 text-3xl mb-6"></i>
+            <p class="text-xl leading-relaxed font-medium mb-8">"We have thus far designed, developed and supplied over <span class="text-orange-400 font-bold">2000 customised material handling equipment</span> to a diverse range of industries."</p>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center font-black text-xl">R</div>
+              <div>
+                <div class="font-bold">Mr. H. V. Raja</div>
+                <div class="text-white/60 text-sm">Founder & Managing Director, BAA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating badge -->
+        <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-2xl p-5 border border-gray-100" data-aos="zoom-in" data-aos-delay="400">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
+              <i class="fa fa-check-circle text-green-600 text-xl"></i>
+            </div>
+            <div>
+              <div class="font-black text-primary text-lg">1 Year</div>
+              <div class="text-gray-500 text-xs">Equipment Warranty</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CLIENTS MARQUEE ===== -->
+<section class="py-16 bg-gray-50 border-y border-gray-100" data-aos="fade-up">
+  <div class="max-w-7xl mx-auto px-4 mb-10 text-center">
+    <p class="text-gray-400 text-sm font-semibold uppercase tracking-widest">Trusted by India's Leading Industries</p>
+  </div>
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      <div class="flex gap-12 items-center px-6">
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">BHEL</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">ISRO</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">VOLVO INDIA</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">L&T</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">TOYOTA KIRLOSKAR</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">ASHOK LEYLAND</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">CATERPILLAR</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">CISCO SYSTEMS</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">SANDVIK</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">INGERSOLL-RAND</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">HMT</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">HINDUSTAN LEVER</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">GODREJ</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">IISc</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">SOUTHERN RAILWAYS</span>
+        <span class="text-gray-300">•</span>
+      </div>
+      <!-- Duplicate for seamless loop -->
+      <div class="flex gap-12 items-center px-6">
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">BHEL</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">ISRO</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">VOLVO INDIA</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">L&T</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">TOYOTA KIRLOSKAR</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">ASHOK LEYLAND</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">CATERPILLAR</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">CISCO SYSTEMS</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">SANDVIK</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">INGERSOLL-RAND</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">HMT</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">HINDUSTAN LEVER</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">GODREJ</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">IISc</span>
+        <span class="text-gray-300">•</span>
+        <span class="text-gray-400 font-bold text-sm whitespace-nowrap">SOUTHERN RAILWAYS</span>
+        <span class="text-gray-300">•</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA SECTION ===== -->
+<section class="py-24 bg-gradient-to-br from-primary to-blue-900 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+  <div class="absolute top-0 right-0 w-96 h-96 bg-orange-500/10 rounded-full translate-x-1/2 -translate-y-1/2"></div>
+
+  <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+    <div class="text-orange-400 text-sm font-semibold uppercase tracking-widest mb-4" data-aos="fade-up">Ready to automate?</div>
+    <h2 class="text-4xl lg:text-6xl font-black text-white mb-6" data-aos="fade-up" data-aos-delay="100">Let's Build Something<br /><span class="gradient-text">Exceptional</span></h2>
+    <p class="text-white/60 text-lg mb-10" data-aos="fade-up" data-aos-delay="200">Tell us your requirements and our engineering team will design the perfect solution for your business.</p>
+    <div class="flex flex-wrap gap-4 justify-center" data-aos="fade-up" data-aos-delay="300">
+      <a href="enquiry.html" class="btn-primary text-white px-10 py-4 rounded-2xl font-bold text-base inline-flex items-center gap-2">
+        Submit an Enquiry <i class="fa fa-paper-plane"></i>
+      </a>
+      <a href="contactus.html" class="btn-outline text-white px-10 py-4 rounded-2xl font-bold text-base inline-flex items-center gap-2">
+        <i class="fa fa-phone"></i> Call Us Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-gray-950 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      <!-- Brand -->
+      <div class="lg:col-span-2">
+        <div class="flex items-center space-x-3 mb-6">
+          <div class="w-10 h-10 bg-accent rounded-xl flex items-center justify-center">
+            <span class="text-white font-black text-lg">B</span>
+          </div>
+          <div>
+            <div class="font-black text-xl">BAA</div>
+            <div class="text-orange-400 text-xs">Bhaskara Advanced Automation</div>
+          </div>
+        </div>
+        <p class="text-gray-400 leading-relaxed mb-6 max-w-sm">Pioneering automation solutions since 1994. A group of 5 companies committed to engineering excellence and customer satisfaction.</p>
+        <div class="space-y-2 text-gray-400 text-sm">
+          <div class="flex items-start gap-3"><i class="fa fa-map-marker-alt text-accent mt-1"></i><span>No.52/1, Opp Trinity Car Care, Kottigepalya, Old Outer Ring Road, Bangalore – 560091</span></div>
+          <div class="flex items-center gap-3"><i class="fa fa-phone text-accent"></i><a href="tel:+919886330317" class="hover:text-white transition-colors">98863 30317 / 78991 30317</a></div>
+          <div class="flex items-center gap-3"><i class="fa fa-envelope text-accent"></i><a href="mailto:info@baaindia.com" class="hover:text-white transition-colors">info@baaindia.com</a></div>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div>
+        <h4 class="font-bold text-white mb-6">Products</h4>
+        <ul class="space-y-3 text-gray-400">
+          <li><a href="homelist.html" class="hover:text-accent transition-colors flex items-center gap-2"><i class="fa fa-chevron-right text-xs text-accent"></i>Home Lifts</a></li>
+          <li><a href="material_handling_systems.html" class="hover:text-accent transition-colors flex items-center gap-2"><i class="fa fa-chevron-right text-xs text-accent"></i>Material Handling Systems</a></li>
+          <li><a href="coding_applications.html" class="hover:text-accent transition-colors flex items-center gap-2"><i class="fa fa-chevron-right text-xs text-accent"></i>Coding Applications</a></li>
+          <li><a href="special_purpose_machines.html" class="hover:text-accent transition-colors flex items-center gap-2"><i class="fa fa-chevron-right text-xs text-accent"></i>Special Purpose Machines</a></li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="font-bold text-white mb-6">Quick Links</h4>
+        <ul class="space-y-3 text-gray-400">
+          <li><a href="index.html" class="hover:text-accent transition-colors flex items-center gap-2"><i class="fa fa-chevron-right text-xs text-accent"></i>Home</a></li>
+          <li><a href="profile.html" class="hover:text-accent transition-colors flex items-center gap-2"><i class="fa fa-chevron-right text-xs text-accent"></i>Company Profile</a></li>
+          <li><a href="clients.html" class="hover:text-accent transition-colors flex items-center gap-2"><i class="fa fa-chevron-right text-xs text-accent"></i>Our Clients</a></li>
+          <li><a href="support.html" class="hover:text-accent transition-colors flex items-center gap-2"><i class="fa fa-chevron-right text-xs text-accent"></i>Support</a></li>
+          <li><a href="contactus.html" class="hover:text-accent transition-colors flex items-center gap-2"><i class="fa fa-chevron-right text-xs text-accent"></i>Contact Us</a></li>
+          <li><a href="enquiry.html" class="hover:text-accent transition-colors flex items-center gap-2"><i class="fa fa-chevron-right text-xs text-accent"></i>Enquiry</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-gray-500 text-sm">© 2026 Bhaskara Advanced Automation, Bangalore. All rights reserved. Developed by Creomint & Netsaurs</p>
+      <p class="text-gray-600 text-xs">Trusted by ISRO · BHEL · Volvo · L&T · Toyota Kirloskar</p>
+    </div>
+  </div>
+</footer>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 700, once: true, easing: 'ease-out-cubic', offset: 80 });
+
+  // Navbar scroll effect
+  const navbar = document.getElementById('navbar');
+  const logoText = document.getElementById('logo-text');
+  const logoSub = document.getElementById('logo-sub');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) {
+      navbar.classList.add('nav-scrolled');
+      navbar.querySelectorAll('a.nav-link').forEach(el => el.classList.replace('text-white', 'text-primary'));
+      logoText.classList.replace('text-white', 'text-primary');
+      logoSub.classList.replace('text-orange-300', 'text-accent');
+    } else {
+      navbar.classList.remove('nav-scrolled');
+      navbar.querySelectorAll('a.nav-link').forEach(el => {
+        if (!el.classList.contains('text-white')) el.classList.add('text-white');
+        el.classList.remove('text-primary');
+      });
+      logoText.classList.replace('text-primary', 'text-white');
+      logoSub.classList.replace('text-accent', 'text-orange-300');
+    }
+  });
+
+  // Mobile menu
+  const toggle = document.getElementById('mobile-toggle');
+  const menu = document.getElementById('mobile-menu');
+  const icon = document.getElementById('menu-icon');
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-times');
+  });
+
+  // Counter animation
+  const counters = document.querySelectorAll('.counter');
+  const observerOptions = { threshold: 0.5 };
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const target = parseInt(entry.target.dataset.target);
+        let current = 0;
+        const step = target / 60;
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) { current = target; clearInterval(timer); }
+          entry.target.textContent = Math.floor(current);
+        }, 30);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+  counters.forEach(c => observer.observe(c));
+</script>
+</body>
+</html>
